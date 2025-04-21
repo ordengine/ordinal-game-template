@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bitmap.gg</title>
+    <meta charset="UTF-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <script type="importmap">
+  {
+    "imports": {
+        "recursive-endpoints": "/content/89fbbeca30c87535f9db283da584006c90076f220dbf410a01985a1840e0ea0ci0",
+        "boxelGeometry": "/content/c0decdd785a4cfb37a4fce01f62386dec5be5e91a27bf09d121167e473b3cc9fi0",
+        "three": "/content/9029843543713fe7a5a9e76f17c20aa79a6b7f8d37caf0238539cc542c37de7ci0",
+        "react": "/content/609b117277f1e9c9f27f358fe02db34e13d08915bbcea18770dc36f5f3afcbb2i0",
+        "react-dom": "/content/609b117277f1e9c9f27f358fe02db34e13d08915bbcea18770dc36f5f3afcbb2i1",
+        "react-dom/client": "/content/4d9308ce08bed11c028acb3d1dd964ea0e9809f51daf141ca0760e745a8070aei0",
+        "react/jsx-runtime": "/content/609bad601cdafa4d4a2622bbd9f4ebfdd278b8c5ea1efeb0d468db33f871fffai1",
+        "babel-extends": "/content/a78ab4803a3bffd823f11d07beec6bb1acc4bf1291c14b171f407a2fdd354140i0",
+        "@use-gesture/react": "/content/609b66a0094944918cf2559d1abf0594a07480448e43f54cccef488332074623i0",
+        "@react-three/fiber": "/content/f1be1caad667af0ec844d1333ad4d38f2cd7cc2855404bba11ac436b53c799b6i0",
+        "@react-three/postprocessing": "/content/effe98d082131314b11e42f59ac9337ef04593bd51f17677e4caedfcb909e325i0",
+        "@react-three/drei": "/content/ded46f972b0f85ea041359cd94a7878a5e902126fb34ee11dbed1c9ae4dfb1ebi0",
+        "@react-three/cannon": "/content/ffffc61e639cb9b9c9f83bb5d2b3048e4f04d2aa8336bf3fabab86b8d3f36e88i1",
+        "@react-three/a11y": "/content/a11cfb88aceb35ee0e75a088d04ffb17cde8c2563dc2d6c0b7fa56eeb28cfbc9i0",
+        "@react-three/csg": "/content/a11cc72f15b96f6950ce7d7c4ffef8303db6e697293a96850a289aa078b6cb74i0",
+        "three-custom-shader-material": "/content/a11c58cd8c4c48e18cb1c1b0bc87a8be021f3e76c5afe09277e6353bc3e183dai0",
+        "leva": "/content/609bad601cdafa4d4a2622bbd9f4ebfdd278b8c5ea1efeb0d468db33f871fffai2",
+        "randomish": "/content/e61e018322265768010a2a88751510e9abb0591ed49e39cc3781f44716b912f0i0",
+        "material-composer": "/content/ffffa2b0d398de68409230e9f41f6dd7748a4433d4239f328a3f886874b46aa0i4",
+        "material-composer-r3f": "/content/ffffc61e639cb9b9c9f83bb5d2b3048e4f04d2aa8336bf3fabab86b8d3f36e88i0",
+        "shader-composer": "/content/ffffa2b0d398de68409230e9f41f6dd7748a4433d4239f328a3f886874b46aa0i1",
+        "shader-composer-r3f": "/content/ffffa2b0d398de68409230e9f41f6dd7748a4433d4239f328a3f886874b46aa0i2",
+        "shader-composer-toybox": "/content/ffffa2b0d398de68409230e9f41f6dd7748a4433d4239f328a3f886874b46aa0i3",
+        "vfx-composer": "/content/fffff8af34fb45dfac622a385bb6846a3c206595e6cb4daa04a7a90ed02bc833i0",
+        "vfx-composer-r3f": "/content/ffffa2b0d398de68409230e9f41f6dd7748a4433d4239f328a3f886874b46aa0i0",
+        "@react-spring/three": "/content/c0de1c2494d23616f14ad5e55e9c9ac4dc91e3908e3de0ad13f4b9009ae20bcai1",
+        "statery": "/content/c0de1c2494d23616f14ad5e55e9c9ac4dc91e3908e3de0ad13f4b9009ae20bcai2",
+        "maath": "/content/c0de1c2494d23616f14ad5e55e9c9ac4dc91e3908e3de0ad13f4b9009ae20bcai3",
+        "r3f-perf": "/content/c0de9e420433afaed5bdf59ad4f9bf84797304af067ac68c63ad509e0b927205i0",
+        "suspend-react": "/content/9200c4fe863cec5cd22fe31279e18a51dea437d8d0c2856a5fe239679fb96f58i0",
+        "miniplex": "/content/609b6f6f16d2efb9841357a3e161cc54f46dc12c20624696e1d613f86b36dbaai0",
+        "miniplex-react": "/content/c0de975da1f3e39cf1cc64eec4c9806d9ae3c0a1f585a95ee152ed655e5f291ei0",
+        "simplex-noise": "/content/424c377edc7b1ee294114b826a1d481421ec256a20aaf8d4fa25068a9187ac10i0",
+        "alea": "/content/b84e5be46252ecf755d161cc5751df86dc1aa41b03a4eb49e6a594799a93887bi0",
+        "/v135/react-dom@18.3.1/es2022/client.js": "/content/4d9308ce08bed11c028acb3d1dd964ea0e9809f51daf141ca0760e745a8070aei0",
+        "bitmapOCI": "/content/840bc0df4ffc5a7ccedbee35e97506c9577160e233982e627d0045d06366e362i0",
+        "bitmon": "/content/55551557695dd82a2bda5ec3497684ec7cbb2cc1752ff5101accff1648666c3ai0"
+    }
+  }
+
+    </script>
+    <script src="/content/5d82695b820a676ba23cda5390249f295eacb1a97e4df20fc02eaa501bd20eedi0"></script>
+    <script src="/content/609b117277f1e9c9f27f358fe02db34e13d08915bbcea18770dc36f5f3afcbb2i2"></script>
+    <script src="content/44740a1f30efb247ef41de3355133e12d6f58ab4dc8a3146648e2249fa9c6a39i0"></script>
+    <script src="/content/ace98f59871f43dc73db7a65849811fce5bd9aeecca5ee6fad0f99a7793271aci0"></script>
+    <link rel="icon" href="/content/cfab194b924f7785c6e453728e1c264b89b74843633278cda3ad3f57576c1e93i0">
+
+
+</head>
+<body style="background: #000">
+<img id="imgg" draggable="false"
+     src="data:image/octet-stream;base64,UklGRrIBAABXRUJQVlA4IKYBAADwEACdASp/AIAAP/3+/3+/v7+7rJerS/A/iWgAzB9PzclhycB8lJnzK1e+RaFBcKxsckKoIkSV5sbyJh7EBuO7QKBGtyOAvK9Pr9BahlkFbjCOn1WnSnZu7scGJLXrfAqGOWvRy1YCUQ7wKOLBBveFYVw9nvo2iKkFu8sbi5w64IOBV85u/AcyoRzNAjqOHAAA9AtxRGVGuTCk0szVPlh7qXgT3vK8trBH6UqUOJXvWLdWredSQBEURJBFjy3hBt4N5eX+17qEN534YSY9O23ATKMbFfkO03MQVDzAXUbOQyryW6cOpVFIZskBVNZXTvwWgW7xdAMQH3kGFIz4gOH91nC7rvSi82BS+yPvSl6t8lmAyMytf37NVTvuZZi0DYiDNxj30Jc6gM9zSt1dtF1c7Cqd9+ooXNH5MA3RY4c3b9R9WH/hlLcahmVSfYg6T35fR/dXD5yhodZtrSdgBlD9ElOarJ6u6fd4tBKZksG1WMFibyTk4dnZ6Du+jZTwWCHIrMVD+C/oOJMlB0qK57eCp8vL+NEOOMNXsxkrCOBePpfESIAAAA=="
+     style="filter: blur(50px); pointer-events: none; object-fit: cover; z-index: 0; width: 100%; height: 100%; opacity: 0.25; position: absolute; top: 0; left: 0;"/>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
