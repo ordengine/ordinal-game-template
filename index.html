@@ -8,15 +8,13 @@
     <script type="importmap">
   {
     "imports": {
-        "recursive-endpoints": "/content/89fbbeca30c87535f9db283da584006c90076f220dbf410a01985a1840e0ea0ci0",
-        "boxelGeometry": "/content/c0decdd785a4cfb37a4fce01f62386dec5be5e91a27bf09d121167e473b3cc9fi0",
-        "three": "/content/9029843543713fe7a5a9e76f17c20aa79a6b7f8d37caf0238539cc542c37de7ci0",
         "react": "/content/609b117277f1e9c9f27f358fe02db34e13d08915bbcea18770dc36f5f3afcbb2i0",
         "react-dom": "/content/609b117277f1e9c9f27f358fe02db34e13d08915bbcea18770dc36f5f3afcbb2i1",
         "react-dom/client": "/content/4d9308ce08bed11c028acb3d1dd964ea0e9809f51daf141ca0760e745a8070aei0",
         "react/jsx-runtime": "/content/609bad601cdafa4d4a2622bbd9f4ebfdd278b8c5ea1efeb0d468db33f871fffai1",
         "babel-extends": "/content/a78ab4803a3bffd823f11d07beec6bb1acc4bf1291c14b171f407a2fdd354140i0",
         "@use-gesture/react": "/content/609b66a0094944918cf2559d1abf0594a07480448e43f54cccef488332074623i0",
+        "three": "/content/0d013bb60fc5bf5a6c77da7371b07dc162ebc7d7f3af0ff3bd00ae5f0c546445i0",
         "@react-three/fiber": "/content/f1be1caad667af0ec844d1333ad4d38f2cd7cc2855404bba11ac436b53c799b6i0",
         "@react-three/postprocessing": "/content/effe98d082131314b11e42f59ac9337ef04593bd51f17677e4caedfcb909e325i0",
         "@react-three/drei": "/content/ded46f972b0f85ea041359cd94a7878a5e902126fb34ee11dbed1c9ae4dfb1ebi0",
@@ -33,34 +31,49 @@
         "shader-composer-toybox": "/content/ffffa2b0d398de68409230e9f41f6dd7748a4433d4239f328a3f886874b46aa0i3",
         "vfx-composer": "/content/fffff8af34fb45dfac622a385bb6846a3c206595e6cb4daa04a7a90ed02bc833i0",
         "vfx-composer-r3f": "/content/ffffa2b0d398de68409230e9f41f6dd7748a4433d4239f328a3f886874b46aa0i0",
+        "miniplex": "/content/609b6f6f16d2efb9841357a3e161cc54f46dc12c20624696e1d613f86b36dbaai0",
+        "miniplex-react": "/content/c0de975da1f3e39cf1cc64eec4c9806d9ae3c0a1f585a95ee152ed655e5f291ei0",
         "@react-spring/three": "/content/c0de1c2494d23616f14ad5e55e9c9ac4dc91e3908e3de0ad13f4b9009ae20bcai1",
         "statery": "/content/c0de1c2494d23616f14ad5e55e9c9ac4dc91e3908e3de0ad13f4b9009ae20bcai2",
         "maath": "/content/c0de1c2494d23616f14ad5e55e9c9ac4dc91e3908e3de0ad13f4b9009ae20bcai3",
         "r3f-perf": "/content/c0de9e420433afaed5bdf59ad4f9bf84797304af067ac68c63ad509e0b927205i0",
         "suspend-react": "/content/9200c4fe863cec5cd22fe31279e18a51dea437d8d0c2856a5fe239679fb96f58i0",
-        "miniplex": "/content/609b6f6f16d2efb9841357a3e161cc54f46dc12c20624696e1d613f86b36dbaai0",
-        "miniplex-react": "/content/c0de975da1f3e39cf1cc64eec4c9806d9ae3c0a1f585a95ee152ed655e5f291ei0",
         "simplex-noise": "/content/424c377edc7b1ee294114b826a1d481421ec256a20aaf8d4fa25068a9187ac10i0",
         "alea": "/content/b84e5be46252ecf755d161cc5751df86dc1aa41b03a4eb49e6a594799a93887bi0",
         "/v135/react-dom@18.3.1/es2022/client.js": "/content/4d9308ce08bed11c028acb3d1dd964ea0e9809f51daf141ca0760e745a8070aei0",
+        "FBXLoader": "/content/fbfb77e097b40904461dde6d03b419b81c29427695b6148dbe3b7caf2dc718e6i0",
+        "ecs": "/content/eccc13097d15017a9ea7686380253d94ff8855d0cace3c21206e37650f9a5273i0",
+        "gltfAndDraco": "/content/d3d336842ef829556f1c76f12e6ed13e272fe0274f29bd1dfc46e2112304d3ffi0",
         "bitmapOCI": "/content/840bc0df4ffc5a7ccedbee35e97506c9577160e233982e627d0045d06366e362i0",
-        "bitmon": "/content/55551557695dd82a2bda5ec3497684ec7cbb2cc1752ff5101accff1648666c3ai0"
+        "bitmon": "/content/55551557695dd82a2bda5ec3497684ec7cbb2cc1752ff5101accff1648666c3ai0",
+        "@pixiv/thre-vrm": "/content/fadedcce9d4515191d430a8b787d18062e2b98fc26b799abcbb7dfbe6ffa9addi0",
+        "BufferGeometryUtils": "/content/3d3dc321b6541bcb8ca0b3066697b6df55b36b1dcbf19dcde8a53650bebca125i0",
+        "shaderNoiseFunctions": "/content/f4207b8dd437c7ae421756397d1b5022a0caa6b7b4908cb0f174587d0da69625i0",
+        "@react-spring/web": "/content/c36976f076375baa6e7d778879b466baaf0b49e87af8808cff6d08239049376ei0",
+        "useCollider": "/content/a2fc9311fabf1243566aaeb4f1c7bcc62b72849b82fd358ed2cc00a61a582c7di0",
+        "boxels-shader": "/content/c0dec9591190449efc84e972ebc6b96e98a6ce971faa79357e0e688167934131i0",
+        "GridFloor": "/content/c0ded73640f3a5094b2ebf32d18625005a00271cd42ee7fa62f6c6f61f97bbc3i0",
+        "three-mesh-bvh": "/content/bbbb0f4fe22c4b8c0161503126ad6fb1471d7d0ccd2938a6c2bf8a8d7334f3aei0",
+        "recursive-endpoints": "/content/89fbbeca30c87535f9db283da584006c90076f220dbf410a01985a1840e0ea0ci0",
+        "boxelGeometry": "/content/c0decdd785a4cfb37a4fce01f62386dec5be5e91a27bf09d121167e473b3cc9fi0"
     }
   }
-
     </script>
-    <script src="/content/5d82695b820a676ba23cda5390249f295eacb1a97e4df20fc02eaa501bd20eedi0"></script>
+    <script src="/content/c0de4f9ae5f8862091a653de4550c53a00f713e6704cbb50137a1163c49bb855i0"></script>
     <script src="/content/609b117277f1e9c9f27f358fe02db34e13d08915bbcea18770dc36f5f3afcbb2i2"></script>
-    <script src="content/44740a1f30efb247ef41de3355133e12d6f58ab4dc8a3146648e2249fa9c6a39i0"></script>
-    <script src="/content/ace98f59871f43dc73db7a65849811fce5bd9aeecca5ee6fad0f99a7793271aci0"></script>
-    <link rel="icon" href="/content/cfab194b924f7785c6e453728e1c264b89b74843633278cda3ad3f57576c1e93i0">
+    <!--    tonejs-->
+    <!--    <script src="/content/44740a1f30efb247ef41de3355133e12d6f58ab4dc8a3146648e2249fa9c6a39i0"></script>-->
 
+    <!--    ace-->
+    <!--    <script src="/content/ace98f59871f43dc73db7a65849811fce5bd9aeecca5ee6fad0f99a7793271aci0"></script>-->
+    <link rel="icon" href="/content/cfab194b924f7785c6e453728e1c264b89b74843633278cda3ad3f57576c1e93i0">
 
 </head>
 <body style="background: #000">
 <img id="imgg" draggable="false"
      src="data:image/octet-stream;base64,UklGRrIBAABXRUJQVlA4IKYBAADwEACdASp/AIAAP/3+/3+/v7+7rJerS/A/iWgAzB9PzclhycB8lJnzK1e+RaFBcKxsckKoIkSV5sbyJh7EBuO7QKBGtyOAvK9Pr9BahlkFbjCOn1WnSnZu7scGJLXrfAqGOWvRy1YCUQ7wKOLBBveFYVw9nvo2iKkFu8sbi5w64IOBV85u/AcyoRzNAjqOHAAA9AtxRGVGuTCk0szVPlh7qXgT3vK8trBH6UqUOJXvWLdWredSQBEURJBFjy3hBt4N5eX+17qEN534YSY9O23ATKMbFfkO03MQVDzAXUbOQyryW6cOpVFIZskBVNZXTvwWgW7xdAMQH3kGFIz4gOH91nC7rvSi82BS+yPvSl6t8lmAyMytf37NVTvuZZi0DYiDNxj30Jc6gM9zSt1dtF1c7Cqd9+ooXNH5MA3RY4c3b9R9WH/hlLcahmVSfYg6T35fR/dXD5yhodZtrSdgBlD9ElOarJ6u6fd4tBKZksG1WMFibyTk4dnZ6Du+jZTwWCHIrMVD+C/oOJMlB0qK57eCp8vL+NEOOMNXsxkrCOBePpfESIAAAA=="
      style="filter: blur(50px); pointer-events: none; object-fit: cover; z-index: 0; width: 100%; height: 100%; opacity: 0.25; position: absolute; top: 0; left: 0;"/>
+
 <div id="root"></div>
 <script type="module" src="/src/main.jsx"></script>
 </body>
